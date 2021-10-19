@@ -1,0 +1,4 @@
+{
+    "go.autocompleteUnimportedPackages": true, // 自动导入未导入的包
+    "go.testFlags": ["-v"] // 添加此项配置后【t.Log()】才能输出信息
+}

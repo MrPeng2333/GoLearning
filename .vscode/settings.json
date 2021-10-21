@@ -1,4 +1,12 @@
 {
+    // "go.goroot": "",
+    // "go.gopath": "",
+    // "go.inferGopath": true,
+    // "go.gocodePackageLookupMode": "go",
+    // "go.gotoSymbol.includeImports": true,
+    // "go.useCodeSnippetsOnFunctionSuggest": true,
+    // "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
+    // "go.docsTool": "gogetdoc",
     "go.autocompleteUnimportedPackages": true, // 自动导入未导入的包
     "go.testFlags": ["-v"] // 添加此项配置后【t.Log()】才能输出信息
 }

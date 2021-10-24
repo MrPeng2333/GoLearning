@@ -29,9 +29,6 @@ func AsyncService() chan string {
 		fmt.Println("returned result.")
 		retCh <- ret
 		fmt.Println("service exited.")
-		fmt.Println("service exited.")
-		fmt.Println("service exited.")
-		fmt.Println("service exited.")
 	}()
 	return retCh
 }

@@ -17,7 +17,7 @@ func isCancelled(ctx context.Context) bool {
 }
 
 func TestCancel(t *testing.T) {
-	ctx, cancel := context.WithCancel(context.Background())
+	ctx, cancel := context.WithCancel(context.Background()) // 子context
 	for i := 0; i < 5; i++ {
 		go func(i int, ctx context.Context) {
 			for {
@@ -29,6 +29,6 @@ func TestCancel(t *testing.T) {
 			fmt.Println(i, "Cancelled")
 		}(i, ctx)
 	}
-	cancel()
+	cancel() // 取消子context
 	time.Sleep(time.Second * 1)
 }

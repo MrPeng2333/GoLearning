@@ -8,6 +8,12 @@
     // "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
     // "go.docsTool": "gogetdoc",
     "go.autocompleteUnimportedPackages": true, // 自动导入未导入的包
-    "go.testFlags": ["-v", "-count=1"] // 添加【-v】后【t.Log()】才能输出信息，添加【-count=1】表示关闭缓存
+    "go.testFlags": [   // 添加【-v】后【t.Log()】才能输出信息，添加【-count=1】表示关闭缓存
+        "-v",
+        "-count=1",
+        "-cover",        // 可以得到测试代码的覆盖率 
+        "-bench=."      // 运行文件中所有benchmark方法，windows下此配置应写为-bench="."
+    ],
+    "files.autoSave": "onFocusChange" 
     
 }

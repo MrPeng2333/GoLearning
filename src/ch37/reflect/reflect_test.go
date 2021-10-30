@@ -41,11 +41,6 @@ func (e *Employee) UpdateAge(newVal int) {
 	e.Age = newVal
 }
 
-type Customer struct {
-	CookieID string
-	Name     string
-}
-
 func TestInvokeByName(t *testing.T) {
 	e := &Employee{"1", "Mike", 30}
 	t.Logf("Name: value(%[1]v), Type(%[1]T)", reflect.ValueOf(e).Elem().FieldByName("Name"))
